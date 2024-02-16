@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Hotel_Management_SystemModel3" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Reservation_Table">
+    <Key>
+      <PropertyRef Name="Reservation_ID" />
+    </Key>
+    <Property Name="Reservation_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Reservation_Room_Type" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Reservation_Room_Number" Type="Int32" Nullable="false" />
+    <Property Name="Reservation_Client_ID" Type="Int32" Nullable="false" />
+    <Property Name="Reservation_In" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Reservation_Out" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="Hotel_Management_SystemEntities4" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Reservation_Table" EntityType="Self.Reservation_Table" />
+  </EntityContainer>
+</Schema>

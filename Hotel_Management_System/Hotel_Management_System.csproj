@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9B647BAC-F660-42CC-BC3B-8A48F19AA120}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Hotel_Management_System</RootNamespace>
+    <AssemblyName>Hotel_Management_System</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2">
+      <HintPath>..\..\..\Users\Crossover\Downloads\GunaUI\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Alert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alert.Designer.cs">
+      <DependentUpon>Alert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ClientModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClientModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ClientModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClientModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ClientModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Client_Table.cs">
+      <DependentUpon>ClientModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EllipseControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FormDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDashboard.Designer.cs">
+      <DependentUpon>FormDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReservationModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReservationModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReservationModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReservationModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReservationModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReservationModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Reservation_Table.cs">
+      <DependentUpon>ReservationModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RoomModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RoomModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RoomModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RoomModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RoomModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RoomModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Room_Table.cs">
+      <DependentUpon>RoomModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="User Control\UserControlClient.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control\UserControlClient.Designer.cs">
+      <DependentUpon>UserControlClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Control\UserControlReservation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control\UserControlReservation.Designer.cs">
+      <DependentUpon>UserControlReservation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Control\UserControlRoom.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control\UserControlRoom.Designer.cs">
+      <DependentUpon>UserControlRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Control\UserControlSetting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control\UserControlSetting.Designer.cs">
+      <DependentUpon>UserControlSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User_Table.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Alert.resx">
+      <DependentUpon>Alert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDashboard.resx">
+      <DependentUpon>FormDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="User Control\UserControlClient.resx">
+      <DependentUpon>UserControlClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control\UserControlReservation.resx">
+      <DependentUpon>UserControlReservation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control\UserControlRoom.resx">
+      <DependentUpon>UserControlRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control\UserControlSetting.resx">
+      <DependentUpon>UserControlSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EntityDeploy Include="Model1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <EntityDeploy Include="ClientModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ClientModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="ClientModel.edmx.diagram">
+      <DependentUpon>ClientModel.edmx</DependentUpon>
+    </None>
+    <None Include="Model1.edmx.diagram">
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EntityDeploy Include="RoomModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>RoomModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <EntityDeploy Include="ReservationModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ReservationModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="ReservationModel.edmx.diagram">
+      <DependentUpon>ReservationModel.edmx</DependentUpon>
+    </None>
+    <None Include="RoomModel.edmx.diagram">
+      <DependentUpon>RoomModel.edmx</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ClientModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ClientModel.edmx</DependentUpon>
+      <LastGenOutput>ClientModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="ClientModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ClientModel.edmx</DependentUpon>
+      <LastGenOutput>ClientModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="Model1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Model1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.cs</LastGenOutput>
+    </Content>
+    <Content Include="ReservationModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ReservationModel.edmx</DependentUpon>
+      <LastGenOutput>ReservationModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="ReservationModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ReservationModel.edmx</DependentUpon>
+      <LastGenOutput>ReservationModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="RoomModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>RoomModel.edmx</DependentUpon>
+      <LastGenOutput>RoomModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="RoomModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>RoomModel.edmx</DependentUpon>
+      <LastGenOutput>RoomModel.cs</LastGenOutput>
+    </Content>
+    <None Include="Resources\Success.png" />
+    <None Include="Resources\Information.png" />
+    <None Include="Resources\Error.png" />
+    <None Include="Resources\Warning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
