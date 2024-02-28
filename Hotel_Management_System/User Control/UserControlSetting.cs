@@ -22,24 +22,24 @@ namespace Hotel_Management_System.User_Control
             dbContext = new Hotel_Management_SystemEntities1();
         }
 
-        void AlertBox(Color backColor, Color color, string title, string text, Image icon)
-        {
-            Alert alert = new Alert();
-            alert.BackColor = backColor;
-            alert.ColorAlertBox = color;
-            alert.TitleAlertBox = title;
-            alert.TextAlertBox = text;
-            alert.IconAlertBox = icon;
+        //void AlertBox(Color backColor, Color color, string title, string text, Image icon)
+        //{
+        //    Alert alert = new Alert();
+        //    alert.BackColor = backColor;
+        //    alert.ColorAlertBox = color;
+        //    alert.TitleAlertBox = title;
+        //    alert.TextAlertBox = text;
+        //    alert.IconAlertBox = icon;
 
-            //alert.TopMost = true; // Make the alert topmost
-            //alert.PositionAlertBox(); // Call the method to set the position
-            //alert.Show(); // Show the alert box
+        //    //alert.TopMost = true; // Make the alert topmost
+        //    //alert.PositionAlertBox(); // Call the method to set the position
+        //    //alert.Show(); // Show the alert box
 
-        //    alert.TopMost = true; // Make the alert topmost
-        //    alert.Owner = UserControlSetting; // Set the owner to yourForm
-        //    alert.PositionAlertBox(); // Call the method to set the position
-        //    alert.Show(); // Show the alert box
-        }
+        ////    alert.TopMost = true; // Make the alert topmost
+        ////    alert.Owner = UserControlSetting; // Set the owner to yourForm
+        ////    alert.PositionAlertBox(); // Call the method to set the position
+        ////    alert.Show(); // Show the alert box
+       // }
 
         public void Clear()
         {

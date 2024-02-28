@@ -73,10 +73,10 @@ namespace Hotel_Management_System
 
         private void btnSetting_Click(object sender, EventArgs e)
         {
-            ClientContainer.Hide();
-            RoomContainer.Hide();
+            ClientContainer.Visible = false;
+            RoomContainer.Visible = false;
             SettingContainer.Height = 557;
-            SettingContainer.Show();
+            SettingContainer.Visible = true;
         }
 
       
@@ -90,10 +90,10 @@ namespace Hotel_Management_System
 
         private void btnReservation_Click(object sender, EventArgs e)
         {
-            userControlSetting1.Hide();
+            userControlSetting1.Visible = false;
             ReservationContainer.Height = 557;
-            ReservationContainer.Show(); 
-            userControlReservation1.Show();
+            ReservationContainer.Visible = true; 
+            userControlReservation1.Visible = true;
 
 
 
@@ -103,18 +103,18 @@ namespace Hotel_Management_System
 
         private void btnRoom_Click(object sender, EventArgs e)
         {
-            SettingContainer.Hide();
-            ClientContainer.Hide();
+            SettingContainer.Visible = false;
+            ClientContainer.Visible = false; 
             RoomContainer.Height = 557;
-            RoomContainer.Show();
+            RoomContainer.Visible = true; 
         }
 
         private void btnClient_Click(object sender, EventArgs e)
         {
-            SettingContainer.Hide();
-            RoomContainer.Hide();
+            SettingContainer.Visible = false;
+            RoomContainer.Visible = false;
             ClientContainer.Height = 556;
-            ClientContainer.Show();
+            ClientContainer.Visible = true;
         }
     }
 }

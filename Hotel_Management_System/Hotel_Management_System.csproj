@@ -61,12 +61,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Alert.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Alert.Designer.cs">
-      <DependentUpon>Alert.cs</DependentUpon>
-    </Compile>
     <Compile Include="ClientModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -84,9 +78,6 @@
     </Compile>
     <Compile Include="Client_Table.cs">
       <DependentUpon>ClientModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="EllipseControl.cs">
-      <SubType>Component</SubType>
     </Compile>
     <Compile Include="FormDashboard.cs">
       <SubType>Form</SubType>
@@ -180,9 +171,6 @@
     <Compile Include="User_Table.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Alert.resx">
-      <DependentUpon>Alert.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FormDashboard.resx">
       <DependentUpon>FormDashboard.cs</DependentUpon>
     </EmbeddedResource>
